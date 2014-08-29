@@ -1,14 +1,10 @@
 # goamz - An Amazon Library for Go
 
-This is a fork of [https://launchpad.net/goamz](https://launchpad.net/goamz)
+This is a fork of [https://github.com/torrancew/goamz](https://github.com/mitchellh/goamz)
 that adds some missing API calls to certain packages.
 
-This library is *incomplete*, but implements a large amount of the AWS API.
-It is heavily used in projects such as
-[Terraform](https://github.com/hashicorp/terraform) and
-[Packer](https://github.com/mitchellh/packer). 
-If you find anything missing from this library, 
-please [file an issue](https://github.com/mitchellh/goamz).
+It adds the following features on top of mitchell's library:
+  * Allows configuration of custom SSL CA (S3)
 
 ## Example Usage
 
@@ -16,8 +12,8 @@ please [file an issue](https://github.com/mitchellh/goamz).
 package main
 
 import (
-  "github.com/mitchellh/goamz/aws"
-  "github.com/mitchellh/goamz/s3"
+  "github.com/torrancew/goamz/aws"
+  "github.com/torrancew/goamz/s3"
   "log"
   "fmt"
 )
